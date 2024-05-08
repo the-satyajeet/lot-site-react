@@ -22,8 +22,8 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
+import lot from "./hero/lot-hero.svg";
+import heroBackground from "./hero/hero-background.svg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -99,7 +99,7 @@ export {
   loading,
   background,
   curve,
-  robot,
+  lot,
   heroBackground,
   curve1,
   curve2,

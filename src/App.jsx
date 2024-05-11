@@ -23,7 +23,6 @@ const App = () => {
         <Roadmap />
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );

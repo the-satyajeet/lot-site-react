@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { bglogin } from '../assets';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -23,13 +24,14 @@ const SignUp = () => {
   };
 
   return (
-    <section>
+    <section className='flex justify-center mt-15'>
       <form onSubmit={handleSubmit}>
-        <div className="w-[785px] h-[405px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
+        <div className="w-[785px] h-[430px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
           <div className="left-[49.27px] top-[36.11px] absolute justify-start items-center gap-[75.91px] inline-flex">
-            <div>
-              <span className="text-neutral-500 text-[29.09px] font-light ">Ready to become,<br /></span>
-              <span className="text-orange-600 text-[43.37px] font-bold">Leaders of Today!</span>
+            <div className='flex flex-col gap-7'>
+              <img src={bglogin} alt="background" width={250} height={250} className='absolute left-20 blur-sm top-6' />
+              <span className="text-neutral-500 text-[29.09px] font-light text-white z-20 ">Ready to become,<br /></span>
+              <span className="text-orange-600 text-[43.37px] font-bold z-20">Leaders of Today!</span>
             </div>
             <div className="flex-col justify-start items-start gap-[11.42px] inline-flex">
               <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light" placeholder='Full Name' />

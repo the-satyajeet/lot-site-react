@@ -11,6 +11,7 @@ import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import SignUp from "./components/SignUp";
+import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Header />
           <Hero />
           <SignUp />
+          <Login />
           <Benefits />
           <Collaboration />
           <Services />

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { registerUserAction } from '../Redux/Auth/auth.action';
+import { bglogin } from "../assets";
+import { google } from "../assets";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -27,11 +29,18 @@ const SignUp = () => {
   };
 
   return (
-    <section>
+    <section className="flex justify-center mt-15">
       <form onSubmit={handleSubmit}>
-        <div className="w-[785px] h-[405px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
+        <div className="w-[785px] h-[430px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
           <div className="left-[49.27px] top-[36.11px] absolute justify-start items-center gap-[75.91px] inline-flex">
-            <div>
+            <div className="flex flex-col gap-7">
+            <img
+                src={bglogin}
+                alt="background"
+                width={250}
+                height={250}
+                className="absolute left-20 blur-sm top-6 "
+              />
               <span className="text-neutral-500 text-[29.09px] font-light ">Ready to become,<br /></span>
               <span className="text-orange-600 text-[43.37px] font-bold">Leaders of Today!</span>
             </div>
@@ -51,8 +60,13 @@ const SignUp = () => {
               </button>
               <div className="self-stretch text-center text-neutral-500 text-[10.53px] font-light">or continue with</div>
               <button className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-center items-center gap-[7.52px] inline-flex">
-                <div className="w-[18.05px] h-[18.05px] relative" />
-                <div className="text-neutral-500 text-xs font-light">Google Account</div>
+              <img
+                  src={google}
+                  className="w-[18.05px] h-[18.05px] relative"
+                />
+                <p className="text-neutral-500 text-xs font-light">
+                  Google Account
+                </p>
               </button>
               <div><span className="text-neutral-500 text-[10.53px] font-light">Already have a account? </span><span className="text-orange-600 text-[10.53px] font-bold"><a href=''>Login</a></span></div>
             </div>

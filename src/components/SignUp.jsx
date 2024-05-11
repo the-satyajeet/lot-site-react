@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
-import { bglogin } from '../assets';
+import React, { useState } from "react";
+import { bglogin } from "../assets";
+import { google } from "../assets";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    username: '',
-    password: '',
-    confirmPassword: ''
+    fullName: "",
+    email: "",
+    username: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -24,41 +25,104 @@ const SignUp = () => {
   };
 
   return (
-    <section className='flex justify-center mt-15'>
+    <section className="flex justify-center mt-15">
       <form onSubmit={handleSubmit}>
         <div className="w-[785px] h-[430px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
           <div className="left-[49.27px] top-[36.11px] absolute justify-start items-center gap-[75.91px] inline-flex">
-            <div className='flex flex-col gap-7'>
-              <img src={bglogin} alt="background" width={250} height={250} className='absolute left-20 blur-sm top-6' />
-              <span className="text-neutral-500 text-[29.09px] font-light text-white z-20 ">Ready to become,<br /></span>
-              <span className="text-orange-600 text-[43.37px] font-bold z-20">Leaders of Today!</span>
+            <div className="flex flex-col gap-7">
+              <img
+                src={bglogin}
+                alt="background"
+                width={250}
+                height={250}
+                className="absolute left-20 blur-sm top-6 "
+              />
+              <span className="text-neutral-500 text-[29.09px] font-light text-gray-300 z-20 ">
+                Ready to become,
+                <br />
+              </span>
+              <span className="text-orange-600 text-[43.37px] font-bold z-20">
+                Leaders of Today!
+              </span>
             </div>
             <div className="flex-col justify-start items-start gap-[11.42px] inline-flex">
-              <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light" placeholder='Full Name' />
+              <input
+                type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light"
+                placeholder="Full Name"
+              />
 
-              <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light" placeholder='Email' />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light"
+                placeholder="Email"
+              />
 
-              <input type="text" name="username" value={formData.username} onChange={handleChange} className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light" placeholder='Username' />
+              <input
+                type="text"
+                name="username"
+                value={formData.username}
+                onChange={handleChange}
+                className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light"
+                placeholder="Username"
+              />
 
-              <input type="password" name="password" value={formData.password} onChange={handleChange} className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light" placeholder='Password' />
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light"
+                placeholder="Password"
+              />
 
-              <input type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light" placeholder='Confirm Password' />
+              <input
+                type="password"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex cursor-pointer hover:border-orange-600 text-neutral-100 text-xs font-light"
+                placeholder="Confirm Password"
+              />
 
-              <button type="submit" className="w-[252.73px] p-[7.52px] bg-orange-600 rounded-[3.01px] border border-red-300 justify-center items-center gap-[7.52px] inline-flex">
+              <button
+                type="submit"
+                className="w-[252.73px] p-[7.52px] bg-orange-600 rounded-[3.01px] border border-red-300 justify-center items-center gap-[7.52px] inline-flex"
+              >
                 <div className="text-white text-xs font-bold">Sign Up</div>
               </button>
-              <div className="self-stretch text-center text-neutral-500 text-[10.53px] font-light">or continue with</div>
+              <div className="self-stretch text-center text-neutral-500 text-[10.53px] font-light">
+                or continue with
+              </div>
               <button className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-center items-center gap-[7.52px] inline-flex">
-                <div className="w-[18.05px] h-[18.05px] relative" />
-                <div className="text-neutral-500 text-xs font-light">Google Account</div>
+                <img
+                  src={google}
+                  className="w-[18.05px] h-[18.05px] relative"
+                />
+                <p className="text-neutral-500 text-xs font-light">
+                  Google Account
+                </p>
               </button>
-              <div><span className="text-neutral-500 text-[10.53px] font-light">Already have a account? </span><span className="text-orange-600 text-[10.53px] font-bold"><a href=''>Login</a></span></div>
+              <div>
+                <span className="text-neutral-500 text-[10.53px] font-light">
+                  Already have a account?{" "}
+                </span>
+                <span className="text-orange-600 text-[10.53px] font-bold">
+                  <a href="">Login</a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </form>
     </section>
-  )
-}
+  );
+};
 
 export default SignUp;

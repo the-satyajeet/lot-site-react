@@ -75,10 +75,14 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 import bglogin from "./login-signup-bg.svg"
+import logo from "./lot-logo.svg"
+import google from "./google-logo.svg"
 
 export {
   lotnavlogo,
+  google,
   bglogin,
+  logo,
   check,
   check2,
   loading1,

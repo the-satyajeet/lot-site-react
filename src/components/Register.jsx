@@ -1,19 +1,18 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Register = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     gender: "",
     registrationNumber: "",
-    course: "",
+    course: "DEFAULT",
     contactNumber: "",
     whatsAppNumber: "",
     email: "",
     batch: "",
-    stay: "",
-    ad: "",
-    roles: "",
+    stay: "DEFAULT",
+    ad: "DEFAULT",
+    roles: "DEFAULT",
     file: "",
     selfDefinition: "",
     enableWhatsApp: false,
@@ -31,8 +30,9 @@ const Register = () => {
     e.preventDefault();
     console.log(JSON.stringify(formData, null, 2));
   };
+
   return (
-    <section className="flex justify-center mt-15">
+    <section className="flex justify-center mt-15 z-20">
       <div className="w-[785px] h-[460px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
         <div className="left-[70px] top-[47px] absolute">
           <span className="text-neutral-500 text-lg font-normal">
@@ -46,6 +46,7 @@ const Register = () => {
         <div className="w-[252.73px] left-[70px] top-[97.68px] absolute flex-col justify-start items-start gap-[11.42px] inline-flex">
           <input
             type="text"
+            name="fullName"
             value={formData.fullName}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex text-neutral-100 text-xs font-normal"
@@ -62,35 +63,38 @@ const Register = () => {
                 onChange={handleChange}
                 className="text-neutral-500 text-[10.53px] font-normal checked:bg-orange-600"
               />
-              <label htmlFor="male" className="text-xs text-neutral-500 ">
+              <label htmlFor="male" className="text-xs text-neutral-500">
                 Male
               </label>
 
               <input
                 type="radio"
                 name="gender"
+                value="female"
                 checked={formData.gender === "female"}
                 onChange={handleChange}
                 className="text-neutral-500 text-[10.53px] font-normal checked:bg-orange-600"
               />
-              <label htmlFor="female" className="text-xs text-neutral-500 ">
+              <label htmlFor="female" className="text-xs text-neutral-500">
                 Female
               </label>
 
               <input
                 type="radio"
                 name="gender"
+                value="others"
                 checked={formData.gender === "others"}
                 onChange={handleChange}
                 className="text-neutral-500 text-[10.53px] font-normal checked:bg-orange-600"
               />
-              <label htmlFor="others" className="text-xs text-neutral-500 ">
+              <label htmlFor="others" className="text-xs text-neutral-500">
                 Others
               </label>
             </div>
           </div>
           <input
             type="text"
+            name="registrationNumber"
             value={formData.registrationNumber}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 text-xs font-normal justify-start items-center gap-[7.52px] inline-flex text-neutral-100"
@@ -100,11 +104,11 @@ const Register = () => {
 
           <select
             name="course"
-            id="course"
-            defaultValue={'DEFAULT'}
             value={formData.course}
             onChange={handleChange}
-            className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center text-neutral-100 text-[0.65rem] gap-[7.52px] inline-flex"
+            className={`w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center text-[0.65rem] gap-[7.52px] inline-flex ${
+              formData.course === "DEFAULT" ? "text-neutral-500 text-xs" : "text-neutral-100"
+            }`}
           >
             <option
               value="DEFAULT"
@@ -154,6 +158,7 @@ const Register = () => {
 
           <input
             type="text"
+            name="contactNumber"
             value={formData.contactNumber}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex text-xs font-normal text-neutral-100"
@@ -163,6 +168,7 @@ const Register = () => {
 
           <input
             type="text"
+            name="whatsAppNumber"
             value={formData.whatsAppNumber}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex text-neutral-100 text-xs font-normal"
@@ -172,6 +178,7 @@ const Register = () => {
 
           <input
             type="email"
+            name="email"
             value={formData.email}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center gap-[7.52px] inline-flex text-neutral-100 text-xs font-normal"
@@ -180,7 +187,7 @@ const Register = () => {
           />
         </div>
 
-        <div className="left-[462.27px] top-[45.75px] absolute flex-col justify-start items-start gap-[12.09px] inline-flex ">
+        <div className="left-[462.27px] top-[45.75px] absolute flex-col justify-start items-start gap-[12.09px] inline-flex">
           <div className="flex-col justify-start items-start gap-[11.42px] flex">
             <input
               type="text"
@@ -194,13 +201,12 @@ const Register = () => {
 
           <select
             name="stay"
-            id="stay"
             value={formData.stay}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center text-neutral-100 text-[0.65rem] gap-[7.52px] inline-flex"
           >
             <option
-              value=""
+              value="DEFAULT"
               className="text-neutral-500 text-xs font-normal"
               disabled
               hidden
@@ -214,7 +220,7 @@ const Register = () => {
               Hostler
             </option>
             <option
-              value="Day Scholars"
+              value="Day Scholar"
               className="text-neutral-500 text-xs font-normal"
             >
               Day Scholar
@@ -223,15 +229,13 @@ const Register = () => {
 
           <select
             name="ad"
-            id="ad"
             value={formData.ad}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center text-neutral-100 text-[0.65rem] gap-[7.52px] inline-flex"
           >
             <option
-              value="medium"
+              value="DEFAULT"
               className="text-neutral-500 text-xs font-normal"
-              selected
               disabled
               hidden
             >
@@ -241,19 +245,19 @@ const Register = () => {
               value="Poster"
               className="text-neutral-500 text-xs font-normal"
             >
-              Public Speaking
+              Poster
             </option>
             <option
               value="Instagram"
               className="text-neutral-500 text-xs font-normal"
             >
-              Web Development
+              Instagram
             </option>
             <option
               value="Friends"
               className="text-neutral-500 text-xs font-normal"
             >
-              Social Media Management
+              Friends
             </option>
             <option
               value="Website"
@@ -265,15 +269,13 @@ const Register = () => {
 
           <select
             name="roles"
-            id="roles"
             value={formData.roles}
             onChange={handleChange}
             className="w-[252.73px] p-[7.52px] bg-neutral-800 rounded-[3.01px] border border-neutral-500 justify-start items-center text-neutral-100 text-[0.65rem] gap-[7.52px] inline-flex"
           >
             <option
-              value="roles"
+              value="DEFAULT"
               className="text-neutral-500 text-xs font-normal"
-              selected
               disabled
               hidden
             >
@@ -347,7 +349,13 @@ const Register = () => {
           />
 
           <div className="flex items-center gap-1">
-            <input type="checkbox" className="w-[18.05px] h-[18.05px]" />
+            <input
+              type="checkbox"
+              name="enableWhatsApp"
+              checked={formData.enableWhatsApp}
+              onChange={handleChange}
+              className="w-[18.05px] h-[18.05px]"
+            />
             <label
               htmlFor="whatsapp"
               className="text-neutral-500 text-xs font-normal"
@@ -360,7 +368,7 @@ const Register = () => {
             onClick={handleSubmit}
             className="w-[252.73px] p-[7.52px] bg-orange-600 rounded-[3.01px] border border-red-300 justify-center items-center gap-[7.52px] inline-flex text-white text-xs font-bold"
           >
-            Login
+            Register
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({setActiveBody}) => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
@@ -36,7 +36,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 animate-in max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className="block w-[12rem] xl:mr-8"  onClick={() => setActiveBody("Hero")}>
           <img src={lotnavlogo} width={160} height={34} alt="LOT logo" />
         </a>
 
@@ -68,13 +68,14 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center ml-12">
-        <a
-          href="#signup"
+        <a onClick={() => setActiveBody("SignUp")}
+          // href="#signup"
           className="button hidden mr-8 text-white transition-colors hover:text-orange-600 lg:block"
         >
           Sign up
         </a>
-        <Button className="hidden lg:flex" href="#login">
+
+        <Button onClick={() => setActiveBody("Login")} className="hidden lg:flex">
           Sign in
         </Button>
 

@@ -4,7 +4,7 @@ import { registerUserAction } from '../Redux/Auth/auth.action';
 import { bglogin } from "../assets";
 import { google } from "../assets";
 
-const SignUp = () => {
+const SignUp = ({setActiveBody}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,7 +29,7 @@ const SignUp = () => {
   };
 
   return (
-    <section className="flex justify-center mt-15">
+    <section className="flex justify-center mt-15 z-20">
       <form onSubmit={handleSubmit}>
         <div className="w-[785px] h-[430px] relative bg-zinc-950 rounded-[10.91px] border border-orange-600">
           <div className="left-[49.27px] top-[36.11px] absolute justify-start items-center gap-[75.91px] inline-flex">
@@ -68,7 +68,7 @@ const SignUp = () => {
                   Google Account
                 </p>
               </button>
-              <div><span className="text-neutral-500 text-[10.53px] font-light">Already have a account? </span><span className="text-orange-600 text-[10.53px] font-bold"><a href=''>Login</a></span></div>
+              <div><span className="text-neutral-500 text-[10.53px] font-light">Already have a account? </span><span className="text-orange-600 text-[10.53px] font-bold cursor-pointer" onClick={() => setActiveBody("Register")}>Login</span></div>
             </div>
           </div>
         </div>

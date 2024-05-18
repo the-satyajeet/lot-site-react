@@ -77,10 +77,12 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 import bglogin from "./login-signup-bg.svg";
 import logo from "./lot-logo.svg"
+import squidGame from "./squid-game.png"
 
 export {
   lotnavlogo,
   bglogin,
+  squidGame,
   logo,
   google,
   check,

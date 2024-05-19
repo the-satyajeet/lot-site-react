@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { eventRegisterAction } from "../Redux/Auth/auth.action";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +19,7 @@ const Register = () => {
     selfDefinition: "",
     enableWhatsApp: false,
   });
+  const dispatch=useDispatch();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -29,6 +32,7 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(JSON.stringify(formData, null, 2));
+    dispatch(eventRegisterAction({data:formData}))
   };
 
   return (

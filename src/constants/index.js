@@ -111,10 +111,10 @@ export const roadmap = [
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "progress",
+    title: "Event Planning",
+    text: "Allow admins to plan and post their upcoming events details on workspace site for the advertisement purpose.",
+    date: "Mar 2023",
+    status: "done",
     imageUrl: roadmap3,
   },
   {

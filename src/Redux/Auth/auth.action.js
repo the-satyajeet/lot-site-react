@@ -47,9 +47,9 @@ export const eventRegisterAction = (eventRegister) => async (dispatch) => {
             formData.append(key, eventRegister.data[key]);
         });
 
-        // Debug: Log the FormData entries
-        for (let pair of formData.entries()) {
-            console.log(pair[0]+ ', ' + pair[1]); 
+        // Append the file separately if it exists
+        if (eventRegister.data.file) {
+            formData.append("file", eventRegister.data.file);
         }
 
         const config = {

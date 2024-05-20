@@ -48,7 +48,11 @@ public UserService userService;
         //File details
         if(image !=null && !image.isEmpty()) {
             String name = image.getOriginalFilename();
-            Path filePath=Paths.get("src/main/resources/static/image/",name);
+            if (name == null) throw new AssertionError();
+            Path filePath=Paths.get("src/main/resources/image/").resolve(name);
+
+            // Ensure directory exists
+            Files.createDirectories(filePath.getParent());
             Files.copy(image.getInputStream(), filePath, StandardCopyOption.REPLACE_EXISTING);
 
             eventReg.setFile(name);

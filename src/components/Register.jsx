@@ -15,24 +15,36 @@ const Register = () => {
     stay: "DEFAULT",
     ad: "DEFAULT",
     roles: "DEFAULT",
-    file: "",
+    image: null,
     selfDefinition: "",
     enableWhatsApp: false,
   });
   const dispatch=useDispatch();
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-  };
+    const { name, value, type, checked, files } = e.target;
+    if (type === "checkbox") {
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: checked,
+        }));
+    } else if (type === "file") {
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: files[0],
+        }));
+    } else {
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    }
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(JSON.stringify(formData, null, 2));
-    dispatch(eventRegisterAction({data:formData}))
+    dispatch(eventRegisterAction({data:formData}));
   };
 
   return (
@@ -334,14 +346,14 @@ const Register = () => {
           >
             Click to choose a file or drag here
           </label>
-          <input
+           <input
             type="file"
             accept="image/*"
-            name="file"
-            value={formData.file}
+            name="image"
+            //value={formData.file}
             onChange={handleChange}
             className="w-[252px] rounded-[0.2rem] border-neutral-800  h-5 text-xs text-neutral-500 text-[10.53px] font-normal"
-          />
+          /> 
 
           <input
             type="textbox"

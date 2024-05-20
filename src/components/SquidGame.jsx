@@ -123,7 +123,7 @@ const SquidGame = () => {
                   Ticket Price
                 </div>
                 <div className="w-[302.85px] text-orange-600 text-3xl font-normal font-['Arial']">
-                  ₹200.00
+                  ₹20.00
                 </div>
               </div>
               <div className="self-stretch h-[96.30px] flex-col justify-start items-start gap-[11.54px] flex">
@@ -131,7 +131,7 @@ const SquidGame = () => {
                   Welcome! To join the event, please register below.
                 </div>
                 <button className="self-stretch px-[30.77px] py-[15.38px] bg-blue-700 rounded-lg justify-center items-center gap-[9.61px] inline-flex text-white text-base font-bold">
-                    Register
+                    Buy Ticket
                 </button>
               </div>
             </div>

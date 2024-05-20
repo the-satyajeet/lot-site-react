@@ -40,7 +40,7 @@ const Hero = ({ setActiveBody }) => {
             innovate with us as we shape tomorrow's success stories together.
           </p>
           <Button onClick={() => setActiveBody("Register")} white>
-            Register Now
+            JOIN LOT
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -59,7 +59,7 @@ const Hero = ({ setActiveBody }) => {
 
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
 
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
@@ -67,12 +67,12 @@ const Hero = ({ setActiveBody }) => {
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax>
+                </ScrollParallax> */}
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    className="hidden absolute -right-[5.5rem] bottom-[20rem] w-[18rem] xl:flex"
+                    title="Best Organization"
                   />
                 </ScrollParallax>
               </div>

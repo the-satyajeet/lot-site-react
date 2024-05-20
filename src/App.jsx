@@ -38,8 +38,8 @@ const App = () => {
           <Benefits />
           <SquidGame />
           <Collaboration />
-          <Services />
-          <Pricing />
+          {/* <Services /> */}
+          {/* <Pricing /> */}
           <Roadmap />
           <Footer />
         </div>

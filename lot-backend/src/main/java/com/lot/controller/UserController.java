@@ -1,10 +1,17 @@
 package com.lot.controller;
 
+import com.lot.module.EventRegister;
 import com.lot.module.User;
 import com.lot.repository.UserRepository;
+import com.lot.service.RegisterEventService;
 import com.lot.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -17,7 +24,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private RegisterEventService registerEventService;
 
+    private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
     //Get all user
     @GetMapping("/api/users")
@@ -62,5 +72,15 @@ public class UserController {
         System.out.println("JWT---"+jwt);
         User user= userService.findUserByJwt(jwt);
         return user;
+    }
+
+    @PostMapping(value = "/api/users/event-register", consumes = "multipart/form-data")
+    public ResponseEntity<EventRegister> registerEvent(@ModelAttribute EventRegister eventRegister, @RequestHeader("Authorization") String jwt, @RequestParam("image") MultipartFile image) throws Exception {
+        log.info("Registering event for user with JWT: {}", jwt);
+        log.info("File received: {}", image.getOriginalFilename());
+        System.out.println("File received: {"+image.getOriginalFilename()+"}");
+        User user = userService.findUserByJwt(jwt);
+        EventRegister eventReg=registerEventService.eventregister(eventRegister,user.getUserId(),image);
+        return  new ResponseEntity<>(eventReg, HttpStatus.OK);
     }
 }

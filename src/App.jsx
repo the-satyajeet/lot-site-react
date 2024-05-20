@@ -37,9 +37,9 @@ const App = () => {
           
           <Benefits />
           <SquidGame />
-          <Collaboration />
-          <Services />
-          <Pricing />
+          {/* <Collaboration /> */}
+          {/* <Services /> */}
+          {/* <Pricing /> */}
           <Roadmap />
           <Footer />
         </div>

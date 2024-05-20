@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57a7c61f-ea2d-46a2-bbc2-4a946d46f064" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/autoprefixer" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/autoprefixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/cssesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/cssesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/eslint" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/eslint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jiti" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jiti" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/loose-envify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/node-which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rollup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sucrase" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sucrase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sucrase-node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sucrase-node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tailwind" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tailwind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tailwindcss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tailwindcss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/update-browserslist-db" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/update-browserslist-db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/vite" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/vite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/parser/bin/babel-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/parser/bin/babel-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn/bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/autoprefixer/bin/autoprefixer" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/autoprefixer/bin/autoprefixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/browserslist/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/browserslist/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cssesc/bin/cssesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cssesc/bin/cssesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eslint/bin/eslint.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint/bin/eslint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jiti/bin/jiti.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jiti/bin/jiti.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/bin/js-yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/js-yaml/bin/js-yaml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jsesc/bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsesc/bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/json5/lib/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/json5/lib/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/loose-envify/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/loose-envify/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nanoid/bin/nanoid.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nanoid/bin/nanoid.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-import/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-import/node_modules/.bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss-import/node_modules/resolve/bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss-import/node_modules/resolve/bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve/bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve/bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rimraf/bin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rimraf/bin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/bin/rollup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/semver/bin/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/bin/semver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sucrase/bin/sucrase" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sucrase/bin/sucrase" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sucrase/bin/sucrase-node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sucrase/bin/sucrase-node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sucrase/node_modules/.bin/glob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sucrase/node_modules/.bin/glob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sucrase/node_modules/glob/dist/esm/bin.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sucrase/node_modules/glob/dist/esm/bin.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/lib/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/lib/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/.bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/resolve/bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tailwindcss/node_modules/resolve/bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/update-browserslist-db/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/update-browserslist-db/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/bin/vite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/bin/vite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/which/bin/node-which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/which/bin/node-which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2ghNxLcen21rcuAwGluT5AghiUS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "twasiflot",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57a7c61f-ea2d-46a2-bbc2-4a946d46f064" name="Changes" comment="" />
+      <created>1716146098175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716146098175</updated>
+    </task>
+    <servers />
+  </component>
+</project>

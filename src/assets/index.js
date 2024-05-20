@@ -78,12 +78,14 @@ import twitter from "./socials/twitter.svg";
 import bglogin from "./login-signup-bg.svg";
 import logo from "./lot-logo.svg"
 import squidGame from "./squid-game.png"
+import registration from "./registration-icon.svg"
 
 export {
   lotnavlogo,
   bglogin,
   squidGame,
   logo,
+  registration,
   google,
   check,
   check2,

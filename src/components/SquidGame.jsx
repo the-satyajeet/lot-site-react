@@ -1,5 +1,5 @@
 import React from "react";
-import { squidGame } from "../assets";
+import { registration, squidGame } from "../assets";
 
 const SquidGame = () => {
   return (
@@ -106,7 +106,7 @@ const SquidGame = () => {
         <div className="w-[349px] left-[408px] top-[21px] absolute flex-col justify-between items-center inline-flex">
           <div className="h-[69.22px] w-[349px] left-[408px] p-[23.07px] bg-blue-500 rounded-tl-2xl rounded-tr-2xl flex-col justify-start items-start gap-[9.61px] flex">
             <div className="justify-center items-center gap-[9.61px] inline-flex">
-              <div className="w-[23.07px] h-[23.07px] relative border" />
+              <img src={registration} className="w-[23.07px] h-[23.07px]" />
               <div className="flex-col justify-start items-start gap-[15.38px] inline-flex">
                 <div className="flex-col justify-start items-start gap-[11.54px] flex">
                   <div className="text-white text-xl font-normal font-['Arial']">
@@ -123,7 +123,7 @@ const SquidGame = () => {
                   Ticket Price
                 </div>
                 <div className="w-[302.85px] text-orange-600 text-3xl font-normal font-['Arial']">
-                  ₹200.00
+                  ₹20.00
                 </div>
               </div>
               <div className="self-stretch h-[96.30px] flex-col justify-start items-start gap-[11.54px] flex">
@@ -131,7 +131,7 @@ const SquidGame = () => {
                   Welcome! To join the event, please register below.
                 </div>
                 <button className="self-stretch px-[30.77px] py-[15.38px] bg-blue-700 rounded-lg justify-center items-center gap-[9.61px] inline-flex text-white text-base font-bold">
-                    Register
+                    Buy Ticket
                 </button>
               </div>
             </div>

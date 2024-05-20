@@ -44,13 +44,13 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Workshops",
+    url: "#events",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Join LOT",
+    url: "#register",
   },
   {
     id: "3",

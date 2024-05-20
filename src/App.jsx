@@ -37,7 +37,7 @@ const App = () => {
           
           <Benefits />
           <SquidGame />
-          <Collaboration />
+          {/* <Collaboration /> */}
           {/* <Services /> */}
           {/* <Pricing /> */}
           <Roadmap />

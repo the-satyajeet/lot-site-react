@@ -4,6 +4,8 @@ import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 
+// Collaboration
+
 const Collaboration = () => {
   return (
     <Section crosses>

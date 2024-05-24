@@ -5,6 +5,7 @@ import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 
+// Benefits Section
 const Benefits = () => {
   return (
     <Section id="events">

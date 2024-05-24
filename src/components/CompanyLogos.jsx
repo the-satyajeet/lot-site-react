@@ -1,5 +1,7 @@
 import { companyLogos } from "../constants";
 
+// Company Logo
+
 const CompanyLogos = ({ className }) => {
   return (
     <div className={className}>

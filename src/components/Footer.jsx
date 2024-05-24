@@ -2,6 +2,8 @@ import React from "react";
 import Section from "./Section";
 import { socials } from "../constants";
 
+// Footer
+
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
